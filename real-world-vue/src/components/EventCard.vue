@@ -1,7 +1,7 @@
 <template>
-  <RouterLink class="event-link" :to="{name: 'event-detail', params:{id: event?.id}}">
-    <div class="event-class">
-      <div class="event-card">
+  <RouterLink class="text-gray-700 no-underline" :to="{name: 'event-detail', params:{id: event?.id}}">
+    <div class="mb-4">
+      <div class="p-5 w-64 cursor-pointer border border-gray-800 transform transition-transform duration-200 hover:scale-101 hover:shadow-md">
         <span>@{{ event?.time }} on {{ event?.date }}</span>
         <h4>{{ event?.title }}</h4>
       </div>
@@ -22,7 +22,7 @@
   </script>
   
   <style scoped>
-  .event-card {
+  /* .event-card {
     padding: 20px;
     width: 250px;
     cursor: pointer;
@@ -38,5 +38,5 @@
   .event-link {
     color: #2c3e50;
     text-decoration: none;
-  }
+  } */
   </style>
